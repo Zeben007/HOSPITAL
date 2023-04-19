@@ -4,10 +4,10 @@ CREATE DATABASE bd_hospital CHARACTER SET utf8mb4;
 USE bd_hospital;
 
 CREATE TABLE hospitales (
-  cod_hospital INTEGER,
+  cod_hospital INTEGER PRIMARY KEY,
   nombre       VARCHAR(50),
   direccion    VARCHAR(50),
-  num_plazas   INTEGER
+  num_plazas   INTEGER,
 );
 
 CREATE TABLE personas (
